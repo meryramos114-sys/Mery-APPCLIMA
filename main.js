@@ -1,4 +1,4 @@
-const API_KEY = "402a4209262a67612de43e4464a4f11c";   
+const API_KEY = "d68b5f60656148ce0948a0b1015f207a";   
 
 console.log("🔑 API Key cargada:", API_KEY ? "Sí (longitud: " + API_KEY.length + ")" : "NO");
 
