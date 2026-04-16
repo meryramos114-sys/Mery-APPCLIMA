@@ -1,0 +1,69 @@
+:root {
+    --neon-blue: #00f0ff;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0a2a, #1a0033);
+    color: #fff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    overflow-x: hidden;
+}
+
+.neon-title {
+    color: #fff;
+    text-shadow: 
+        0 0 10px var(--neon-blue),
+        0 0 20px var(--neon-blue),
+        0 0 40px var(--neon-blue);
+    letter-spacing: 4px;
+}
+
+/* Input neón */
+.neon-input-group .neon-input {
+    background: #111133;
+    border: 2px solid var(--neon-blue);
+    color: #fff;
+    box-shadow: 0 0 15px var(--neon-blue);
+}
+.neon-input-group .neon-input:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 25px #00ffff;
+    outline: none;
+}
+.neon-input::placeholder {
+    color: #8888cc;
+}
+
+/* Botón neón */
+.neon-btn {
+    background: #111133;
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+    box-shadow: 0 0 20px var(--neon-blue);
+    transition: all 0.3s;
+}
+.neon-btn:hover {
+    background: var(--neon-blue);
+    color: #111133;
+    box-shadow: 0 0 30px #00ffff;
+}
+
+/* Tarjetas neón */
+.neon-card {
+    background: rgba(17, 17, 51, 0.85);
+    border: 2px solid var(--neon-blue);
+    box-shadow: 0 0 30px var(--neon-blue);
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(8px);
+}
+.neon-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 45px #00ffff;
+}
+.card-header {
+    background: rgba(0, 240, 255, 0.1);
+    border-bottom: 1px solid var(--neon-blue);
+}
+.btn-close {
+    filter: brightness(0) invert(1);
+}
